@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django blog</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="{% url 'home' %}">Django blog</a></h1>
+      <div>
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </header>
+  </body>
+</html>
